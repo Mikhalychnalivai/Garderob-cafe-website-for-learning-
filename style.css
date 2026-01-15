@@ -187,7 +187,7 @@ html {
   }
 
   .top-nav {
-    gap: 32px;
+    gap: 28px;
     top: 24px;
   }
 
@@ -231,5 +231,6 @@ html {
     max-height: 220px;
   }
 }
+
 
 
