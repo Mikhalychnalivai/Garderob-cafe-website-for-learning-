@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Garderob</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="hero">
+  <nav class="top-nav">
+    <a href="#about">О нас</a>
+    <a href="#menu">Меню</a>
+    <a href="#map">Местоположение</a>
+  </nav>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <h1>Garderob</h1>
+    <p>Кофе, атмосфера и пространство для города</p>
+  </div>
+</header>
+
+<section class="about" id="about">
+  <h2>О нас</h2>
+  <div class="about-grid">
+    <div class="about-card">
+      <h3>История</h3>
+      <p>Garderob — городское кафе, созданное как пространство для людей, которым важны вкус, уют и спокойствие.</p>
+    </div>
+    <div class="about-card">
+      <h3>Наш путь</h3>
+      <p>Мы выросли из одной кофейни в крупную городскую сеть, сохранив качество и атмосферу.</p>
+    </div>
+    <div class="about-card">
+      <h3>Философия</h3>
+      <p>Баланс кофе, тишины и дизайна — основа каждого пространства Garderob.</p>
+    </div>
+  </div>
+</section>
+
+<section class="menu" id="menu">
+  <h2>Наши напитки</h2>
+  <div class="menu-grid">
+
+    <div class="menu-card">
+      <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772" alt="Латте">
+      <h3>Латте</h3>
+      <p>Классический кофейный напиток на основе эспрессо с добавлением горячего молока и нежной молочной пены.</p>
+      <div class="menu-footer">
+        <span>250 ₽</span>
+        <button data-modal="latte">Состав</button>
+      </div>
+    </div>
+
+    <div class="menu-card">
+      <img src="https://i-coffee.me/wp-content/uploads/2022/02/Coffee_Cappuccino_Cream_Cup_Saucer_525045_2048x1152.jpg" alt="Капучино">
+      <h3>Капучино</h3>
+      <p>Сбалансированное сочетание насыщенного эспрессо, горячего молока и плотной молочной пены.</p>
+      <div class="menu-footer">
+        <span>230 ₽</span>
+        <button data-modal="cappuccino">Состав</button>
+      </div>
+    </div>
+
+    <div class="menu-card">
+      <img src="https://images.gastronom.ru/R2tO6aTuXyg6Hsqx6rwSMushYvJIv2VvDEzWfxibgI4/pr:recipe-cover-image/g:ce/rs:auto:0:0:0/L2Ntcy9hbGwtaW1hZ2VzL2JkYjE0OWFlLTIzNzMtNDk5Mi05NTY1LWYwNmJlOTExMjI1OC5qcGc.webp" alt="Раф">
+      <h3>Раф</h3>
+      <p>Авторский кофейный напиток с бархатной текстурой, приготовленный на основе эспрессо и сливок.</p>
+      <div class="menu-footer">
+        <span>270 ₽</span>
+        <button data-modal="raf">Состав</button>
+      </div>
+    </div>
+
+    <div class="menu-card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmjf5G4uhVhjlUhv2aqziCZ7558Bwxz8hRcQ&s" alt="Американо">
+      <h3>Американо</h3>
+      <p>Чёрный кофейный напиток с мягким вкусом, получаемый путём добавления горячей воды к эспрессо.</p>
+      <div class="menu-footer">
+        <span>200 ₽</span>
+        <button data-modal="americano">Состав</button>
+      </div>
+    </div>
+
+    <div class="menu-card">
+      <img src="https://st8.stblizko.ru/images/product/291/294/024_big.png" alt="Эспрессо">
+      <h3>Эспрессо</h3>
+      <p>Концентрированный кофейный напиток, раскрывающий вкус и аромат свежеобжаренных зёрен арабики.</p>
+      <div class="menu-footer">
+        <span>180 ₽</span>
+        <button data-modal="espresso">Состав</button>
+      </div>
+    </div>
+
+    <div class="menu-card">
+      <img src="https://shop.legend-tea.ru/upload/iblock/7fc/c0xmp2ox7tvkzay851zdppjxl8fa9703/ai-generated-cappuccino-cup-on-saucer-free-photo.jpeg" alt="Флэт уайт">
+      <h3>Флэт уайт</h3>
+      <p>Кофейный напиток с повышенной концентрацией кофе и минимальным количеством молока.</p>
+      <div class="menu-footer">
+        <span>260 ₽</span>
+        <button data-modal="flatwhite">Состав</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="map" id="map">
+  <h2>Мы находимся</h2>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7888.1285538403035!2d39.70405899686892!3d47.22674329599411!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40e3b98baa7a7a19%3A0x91dfb78bcd0c1812!2sGarderob!5e0!3m2!1sru!2sru!4v1767950065380!5m2!1sru!2sru"
+    loading="lazy"></iframe>
+</section>
+
+<footer class="footer">
+  <h3>Связь с нами</h3>
+  <p>______________________________________________</p>
+  <p>Телефон: +7 (900) 000-00-00</p>
+  <p>Почта: garderob@gmail.com</p>  
+  <p>Telegram: @garderob</p>
+  <p>Garderob 2026</p>
+</footer>
+
+<div class="modal" id="modal">
+  <div class="modal-content">
+    <span class="close">×</span>
+    <img id="modal-img" />
+    <h3 id="modal-title"></h3>
+    <p id="modal-text"></p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
