@@ -40,6 +40,8 @@ body {
   left:50%;
   transform:translateX(-50%);
   display:flex;
+  flex-wrap: nowrap;
+  white-space: nowrap;
   gap:80px;
   z-index:3;}
 
@@ -231,6 +233,7 @@ html {
     max-height: 220px;
   }
 }
+
 
 
 
