@@ -12,6 +12,7 @@
   <nav class="top-nav">
     <a href="#about">О нас</a>
     <a href="#menu">Меню</a>
+    <a href="#contact">Контакты</a>
     <a href="#map">Как нас найти</a>
   </nav>
   <div class="hero-overlay"></div>
@@ -49,7 +50,7 @@
       <p>Классический кофейный напиток на основе эспрессо с добавлением горячего молока и нежной молочной пены.</p>
       <div class="menu-footer">
         <span>250 ₽</span>
-        <button data-modal="latte">Состав</button>
+        <button class="button button--secondary" data-modal="latte">Состав</button>
       </div>
     </div>
 
@@ -59,7 +60,7 @@
       <p>Сбалансированное сочетание насыщенного эспрессо, горячего молока и плотной молочной пены.</p>
       <div class="menu-footer">
         <span>230 ₽</span>
-        <button data-modal="cappuccino">Состав</button>
+        <button class="button button--secondary" data-modal="cappuccino">Состав</button>
       </div>
     </div>
 
@@ -69,7 +70,7 @@
       <p>Авторский кофейный напиток с бархатной текстурой, приготовленный на основе эспрессо и сливок.</p>
       <div class="menu-footer">
         <span>270 ₽</span>
-        <button data-modal="raf">Состав</button>
+        <button class="button button--secondary" data-modal="raf">Состав</button>
       </div>
     </div>
 
@@ -79,7 +80,7 @@
       <p>Чёрный кофейный напиток с мягким вкусом, получаемый путём добавления горячей воды к эспрессо.</p>
       <div class="menu-footer">
         <span>200 ₽</span>
-        <button data-modal="americano">Состав</button>
+        <button class="button button--secondary" data-modal="americano">Состав</button>
       </div>
     </div>
 
@@ -89,7 +90,7 @@
       <p>Концентрированный кофейный напиток, раскрывающий вкус и аромат свежеобжаренных зёрен арабики.</p>
       <div class="menu-footer">
         <span>180 ₽</span>
-        <button data-modal="espresso">Состав</button>
+        <button class="button button--secondary" data-modal="espresso">Состав</button>
       </div>
     </div>
 
@@ -99,10 +100,47 @@
       <p>Кофейный напиток с повышенной концентрацией кофе и минимальным количеством молока.</p>
       <div class="menu-footer">
         <span>260 ₽</span>
-        <button data-modal="flatwhite">Состав</button>
+        <button class="button button--secondary" data-modal="flatwhite">Состав</button>
       </div>
     </div>
 
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <h2>Свяжитесь с нами</h2>
+  <div class="contact-container">
+    <div class="contact-info">
+      <h3>Мы всегда рады вашим отзывам</h3>
+      <p>Оставьте сообщение, и мы обязательно ответим в течение дня</p>
+      <div class="contact-details">
+        <p>+7 (900) 000-00-00</p>
+        <p>garderob@gmail.com</p>
+        <p>Ростов-на-Дону</p>
+      </div>
+    </div>
+    <form class="contact-form" id="contactForm">
+      <div class="form-group">
+        <input type="text" id="name" name="name" placeholder="Ваше имя" required>
+        <span class="error-message" id="nameError"></span>
+      </div>
+      <div class="form-group">
+        <input type="email" id="email" name="email" placeholder="Ваш email" required>
+        <span class="error-message" id="emailError"></span>
+      </div>
+      <div class="form-group">
+        <input type="tel" id="phone" name="phone" placeholder="Телефон (необязательно)">
+        <span class="error-message" id="phoneError"></span>
+      </div>
+      <div class="form-group">
+        <textarea id="message" name="message" placeholder="Ваше сообщение" rows="5" required></textarea>
+        <span class="error-message" id="messageError"></span>
+      </div>
+      <button type="submit" class="button button--primary">Отправить сообщение</button>
+    </form>
+  </div>
+  <div class="success-message" id="successMessage">
+    <p>Спасибо! Ваше сообщение отправлено. Мы свяжемся с вами в ближайшее время.</p>
   </div>
 </section>
 
@@ -133,7 +171,3 @@
 <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
