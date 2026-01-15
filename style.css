@@ -7,7 +7,7 @@ body {
 .hero { 
   position:relative; 
   height:100vh; 
-  background:url('/img/фонГлавный.jpg') center/cover no-repeat; }
+  background:url('img/фонГлавный.jpg') center/cover no-repeat; }
 
 .hero-overlay { 
   position:absolute; 
@@ -231,4 +231,5 @@ html {
     max-height: 220px;
   }
 }
+
 
