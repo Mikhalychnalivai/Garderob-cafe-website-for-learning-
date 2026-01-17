@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Меню - Garderob Cafe</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="page-header">
+  <nav class="main-nav">
+    <div class="nav-brand">
+      <a href="index.html">Garderob Cafe</a>
+    </div>
+    <div class="nav-links">
+      <a href="about.html">О нас</a>
+      <a href="menu.html" class="active">Меню</a>
+      <a href="booking.html">Бронирование</a>
+      <a href="faq.html">FAQ</a>
+      <a href="partnership.html">Партнеры</a>
+      <a href="news.html">Новости</a>
+      <a href="contact.html">Контакты</a>
+    </div>
+  </nav>
+</header>
+
+<main class="page-content">
+  <section class="page-hero">
+    <h1>Наше меню</h1>
+    <p>Лучшие кофейные напитки и десерты</p>
+  </section>
+
+  <section class="menu-detailed">
+    <div class="menu-categories">
+      <div class="category-nav">
+        <button class="category-btn active" data-category="coffee">Кофе</button>
+        <button class="category-btn" data-category="tea">Чай</button>
+        <button class="category-btn" data-category="desserts">Десерты</button>
+        <button class="category-btn" data-category="snacks">Закуски</button>
+      </div>
+
+      <div class="menu-category active" id="coffee">
+        <h2>Кофейные напитки</h2>
+        <div class="menu-items">
+          <div class="menu-item">
+            <div class="item-info">
+              <h3>Эспрессо</h3>
+              <p>Концентрированный кофейный напиток из 100% арабики</p>
+            </div>
+            <div class="item-price">180 ₽</div>
+          </div>
+          
+          <div class="menu-item">
+            <div class="item-info">
+              <h3>Американо</h3>
+              <p>Эспрессо с горячей водой, сохраняющий аромат кофе</p>
+            </div>
+            <div class="item-price">200 ₽</div>
+          </div>
+          
+          <div class="menu-item">
+            <div class="item-info">
+              <h3>Капучино</h3>
+              <p>Эспрессо с горячим молоком и плотной молочной пеной</p>
+            </div>
+            <div class="item-price">230 ₽</div>
+          </div>
+          
+          <div class="menu-item">
+            <div class="item-info">
+              <h3>Латте</h3>
+              <p>Двойной эспрессо с горячим молоком и воздушной пеной</p>
+            </div>
+            <div class="item-price">250 ₽</div>
+          </div>
+          
+          <div class="menu-item">
+            <div class="item-info">
+              <h3>Флэт уайт</h3>
+              <p>Двойной эспрессо с небольшим количеством молока</p>
+            </div>
+            <div class="item-price">260 ₽</div>
+          </div>
+          
+          <div class="menu-item">
+            <div class="item-info">
+              <h3>Раф</h3>
+              <p>Эспрессо со сливками и ванильным сахаром</p>
+            </div>
+            <div class="item-price">270 ₽</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-category" id="tea">
+        <h2>Чайные напитки</h2>
+        <div class="menu-items">
+          <div class="menu-item">
+            <div class="item-info">
+              <h3>Черный чай</h3>
+              <p>Классический черный чай высшего сорта</p>
+            </div>
+            <div class="item-price">80 ₽</div>
+          </div>
+          
+          <div class="menu-item">
+            <div class="item-info">
+              <h3>Зеленый чай</h3>
+              <p>Нежный зеленый чай с тонким ароматом</p>
+            </div>
+            <div class="item-price">75 ₽</div>
+          </div>
+          
+          <div class="menu-item">
+            <div class="item-info">
+              <h3>Травяной чай</h3>
+              <p>Ароматный сбор из лечебных трав</p>
+            </div>
+            <div class="item-price">100 ₽</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-category" id="desserts">
+        <h2>Десерты</h2>
+        <div class="menu-items">
+          <div class="menu-item">
+            <div class="item-info">
+              <h3>Чизкейк</h3>
+              <p>Нежный творожный торт с ягодным соусом</p>
+            </div>
+            <div class="item-price">320 ₽</div>
+          </div>
+          
+          <div class="menu-item">
+            <div class="item-info">
+              <h3>Тирамису</h3>
+              <p>Классический итальянский десерт с кофе</p>
+            </div>
+            <div class="item-price">350 ₽</div>
+          </div>
+          
+          <div class="menu-item">
+            <div class="item-info">
+              <h3>Круассан</h3>
+              <p>Свежий французский круассан с маслом</p>
+            </div>
+            <div class="item-price">180 ₽</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-category" id="snacks">
+        <h2>Закуски</h2>
+        <div class="menu-items">
+          <div class="menu-item">
+            <div class="item-info">
+              <h3>Сэндвич с курицей</h3>
+              <p>Свежий сэндвич с куриной грудкой и овощами</p>
+            </div>
+            <div class="item-price">280 ₽</div>
+          </div>
+          
+          <div class="menu-item">
+            <div class="item-info">
+              <h3>Салат Цезарь</h3>
+              <p>Классический салат с курицей и соусом</p>
+            </div>
+            <div class="item-price">320 ₽</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="page-footer">
+  <p>&copy; 2026 Garderob Cafe. Все права защищены.</p>
+  <p>Телефон: +7 (900) 000-00-00 | Email: garderob@gmail.com</p>
+</footer>
+
+<script>
+// Menu category switching
+document.querySelectorAll('.category-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    // Remove active class from all buttons and categories
+    document.querySelectorAll('.category-btn').forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('.menu-category').forEach(c => c.classList.remove('active'));
+    
+    // Add active class to clicked button
+    btn.classList.add('active');
+    
+    // Show corresponding category
+    const category = btn.dataset.category;
+    document.getElementById(category).classList.add('active');
+  });
+});
+</script>
+
+</body>
+</html>
