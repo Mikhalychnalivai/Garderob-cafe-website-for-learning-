@@ -354,99 +354,135 @@ html {
     border-radius: 8px;
   }
   
-  /* News mobile styles */
+  /* News mobile styles - полностью переделанные */
   .news-grid {
     grid-template-columns: 1fr;
-    gap: 16px;
+    gap: 12px;
+    padding: 0 5px;
   }
   
   .news-card {
-    padding: 16px;
-    border-radius: 12px;
+    padding: 12px;
+    border-radius: 8px;
+    border-left: 3px solid #1d1d1d;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   }
   
   .news-date {
-    font-size: 11px;
-    margin-bottom: 8px;
+    font-size: 10px;
+    margin-bottom: 6px;
+    color: #999;
+    font-weight: 500;
   }
   
   .news-card h3 {
-    font-size: 14px;
-    margin-bottom: 8px;
-    line-height: 1.3;
+    font-size: 13px;
+    margin-bottom: 6px;
+    line-height: 1.2;
+    font-weight: 600;
   }
   
   .news-card p {
-    font-size: 12px;
-    line-height: 1.4;
-    margin-bottom: 12px;
+    font-size: 11px;
+    line-height: 1.3;
+    margin-bottom: 8px;
+    color: #666;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
   
   .news-tag {
-    font-size: 10px;
-    padding: 2px 8px;
+    font-size: 9px;
+    padding: 2px 6px;
+    border-radius: 8px;
+    display: inline-block;
   }
   
   .filter-btn {
-    padding: 6px 10px;
-    font-size: 10px;
+    padding: 4px 8px;
+    font-size: 9px;
     width: auto;
-    min-width: 60px;
+    min-width: 50px;
     text-align: center;
-    border-radius: 16px;
+    border-radius: 12px;
+    margin: 2px;
   }
   
   .news-filters {
-    gap: 8px;
-    margin-bottom: 30px;
+    gap: 4px;
+    margin-bottom: 20px;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 0 10px;
   }
   
-  /* News detailed page styles */
+  /* News detailed page styles - мобильная версия */
   .news-grid-detailed {
-    gap: 20px;
+    gap: 12px;
+    padding: 0 5px;
   }
   
   .news-card-detailed {
-    grid-template-columns: 1fr;
-    padding: 16px;
-    border-radius: 12px;
+    display: block;
+    padding: 12px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border-left: 3px solid #1d1d1d;
+  }
+  
+  .news-image {
+    display: none; /* Скрываем изображения на мобильных */
   }
   
   .news-card-detailed h2 {
-    font-size: 16px;
-    margin-bottom: 12px;
-    line-height: 1.3;
+    font-size: 14px;
+    margin-bottom: 8px;
+    line-height: 1.2;
+    font-weight: 600;
   }
   
   .news-card-detailed p {
-    font-size: 12px;
-    line-height: 1.4;
-    margin-bottom: 12px;
+    font-size: 11px;
+    line-height: 1.3;
+    margin-bottom: 8px;
+    color: #666;
   }
   
   .news-content {
-    padding: 16px;
+    padding: 0;
   }
   
   .news-meta {
-    margin-bottom: 12px;
+    margin-bottom: 8px;
+    font-size: 10px;
   }
   
   .news-details {
-    padding: 12px;
-    margin-top: 12px;
+    padding: 8px;
+    margin-top: 8px;
+    background: #f9f9f9;
+    border-radius: 6px;
   }
   
   .news-details ul {
-    margin: 8px 0;
-    padding-left: 16px;
+    margin: 6px 0;
+    padding-left: 12px;
   }
   
   .news-details li {
-    font-size: 11px;
-    margin: 4px 0;
+    font-size: 10px;
+    margin: 2px 0;
+    line-height: 1.2;
+  }
+  
+  /* Заголовок страницы новостей */
+  .news-page h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
   }
 }
 
@@ -631,30 +667,61 @@ html {
   }
   
   .main-nav {
-    padding: 8px;
-    gap: 8px;
+    padding: 10px;
+    gap: 10px;
   }
   
   .nav-brand a {
-    font-size: 18px;
+    font-size: 20px;
   }
   
   .nav-links a {
-    font-size: 10px;
-    padding: 3px 6px;
+    font-size: 11px;
+    padding: 4px 8px;
   }
   
   .page-hero {
-    padding: 50px 15px;
+    padding: 40px 10px;
   }
   
   .page-hero h1 {
-    font-size: 28px;
-    margin-bottom: 12px;
+    font-size: 24px;
+    margin-bottom: 10px;
   }
   
   .page-hero p {
-    font-size: 14px;
+    font-size: 12px;
+  }
+  
+  /* Еще более компактные новости для маленьких экранов */
+  .news-card {
+    padding: 8px;
+    margin-bottom: 8px;
+  }
+  
+  .news-card h3 {
+    font-size: 12px;
+    margin-bottom: 4px;
+  }
+  
+  .news-card p {
+    font-size: 10px;
+    -webkit-line-clamp: 1;
+  }
+  
+  .news-date {
+    font-size: 9px;
+  }
+  
+  .news-tag {
+    font-size: 8px;
+    padding: 1px 4px;
+  }
+  
+  .filter-btn {
+    font-size: 8px;
+    padding: 3px 6px;
+    min-width: 40px;
   }
 }
 
@@ -2716,30 +2783,27 @@ html {
 /* Mobile adaptations for new pages */
 @media (max-width: 768px) {
   .main-nav {
-    flex-direction: row;
-    gap: 10px;
-    padding: 10px;
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
     align-items: center;
   }
   
   .nav-brand a {
-    font-size: 20px;
-    margin-right: 15px;
+    font-size: 24px;
+    margin-bottom: 10px;
   }
   
   .nav-links {
-    gap: 8px;
-    flex-wrap: nowrap;
-    justify-content: flex-end;
-    overflow-x: auto;
-    white-space: nowrap;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   
   .nav-links a {
-    font-size: 11px;
-    padding: 4px 8px;
+    font-size: 13px;
+    padding: 6px 12px;
     white-space: nowrap;
-    flex-shrink: 0;
   }
   
   .page-hero {
