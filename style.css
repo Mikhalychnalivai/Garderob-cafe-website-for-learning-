@@ -247,7 +247,7 @@ html {
   }
 
   .top-nav {
-    gap: 8px;
+    gap: 12px;
     top: 15px;
     flex-wrap: wrap;
     justify-content: center;
@@ -256,9 +256,9 @@ html {
   }
 
   .top-nav a {
-    font-size: 12px;
+    font-size: 13px;
     white-space: nowrap;
-    padding: 4px 6px;
+    padding: 4px 8px;
   }
 
   h2 {
@@ -719,107 +719,6 @@ html {
   line-height: 1.6;
 }
 
-/* Partnership Styles */
-.partnership {
-  background: linear-gradient(135deg, #f1ede4 0%, #e8e2d5 100%);
-  position: relative;
-}
-
-.partnership::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: 
-    radial-gradient(circle at 30% 70%, rgba(139, 69, 19, 0.04) 0%, transparent 40%),
-    radial-gradient(circle at 70% 30%, rgba(160, 82, 45, 0.03) 0%, transparent 40%),
-    linear-gradient(135deg, rgba(139, 69, 19, 0.02) 0%, rgba(160, 82, 45, 0.02) 100%);
-  z-index: 0;
-  pointer-events: none;
-}
-
-.partnership > * {
-  position: relative;
-  z-index: 1;
-}
-
-.partnership-intro {
-  text-align: center;
-  margin-bottom: 50px;
-}
-
-.partnership-intro h3 {
-  font-size: 24px;
-  margin-bottom: 16px;
-}
-
-.partnership-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 32px;
-  margin-bottom: 50px;
-}
-
-.partnership-card {
-  background: #fff;
-  padding: 32px;
-  border-radius: 24px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-  text-align: center;
-  transition: transform 0.3s;
-}
-
-.partnership-card:hover {
-  transform: translateY(-5px);
-}
-
-.partnership-icon {
-  font-size: 48px;
-  margin-bottom: 20px;
-}
-
-.partnership-card h4 {
-  font-size: 20px;
-  margin-bottom: 16px;
-  color: #1d1d1d;
-}
-
-.partnership-card ul {
-  list-style: none;
-  padding: 0;
-  margin: 20px 0 0 0;
-}
-
-.partnership-card li {
-  padding: 8px 0;
-  color: #666;
-  position: relative;
-  padding-left: 20px;
-}
-
-.partnership-card li::before {
-  content: '✓';
-  position: absolute;
-  left: 0;
-  color: #1d1d1d;
-  font-weight: bold;
-}
-
-.partnership-contact {
-  background: #fff;
-  padding: 32px;
-  border-radius: 24px;
-  text-align: center;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-}
-
-.partnership-contact h4 {
-  margin-bottom: 20px;
-  font-size: 20px;
-}
-
 /* News Styles */
 .news {
   background: #fff;
@@ -909,14 +808,6 @@ html {
     margin-top: 20px;
   }
   
-  .partnership-grid {
-    grid-template-columns: 1fr;
-  }
-  
-  .partnership-card {
-    padding: 24px;
-  }
-  
   .news-grid {
     grid-template-columns: 1fr;
   }
@@ -1000,9 +891,49 @@ html {
   background: linear-gradient(135deg, #1d1d1d 0%, #333 100%);
   color: #fff;
   text-align: center;
-  padding: 100px 20px;
+  padding: 80px 20px;
   position: relative;
   overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Уникальные фоны для каждой страницы */
+.page-hero--about {
+  background: 
+    linear-gradient(rgba(29, 29, 29, 0.7), rgba(51, 51, 51, 0.7)),
+    url('img/капучино.jpg') center/cover no-repeat;
+}
+
+.page-hero--menu {
+  background: 
+    linear-gradient(rgba(29, 29, 29, 0.7), rgba(51, 51, 51, 0.7)),
+    url('img/латте.jpg') center/cover no-repeat;
+}
+
+.page-hero--booking {
+  background: 
+    linear-gradient(rgba(29, 29, 29, 0.7), rgba(51, 51, 51, 0.7)),
+    url('img/американо.jpg') center/cover no-repeat;
+}
+
+.page-hero--faq {
+  background: 
+    linear-gradient(rgba(29, 29, 29, 0.7), rgba(51, 51, 51, 0.7)),
+    url('img/эспрессо.jpg') center/cover no-repeat;
+}
+
+.page-hero--news {
+  background: 
+    linear-gradient(rgba(29, 29, 29, 0.7), rgba(51, 51, 51, 0.7)),
+    url('img/раф.png') center/cover no-repeat;
+}
+
+.page-hero--contact {
+  background: 
+    linear-gradient(rgba(29, 29, 29, 0.7), rgba(51, 51, 51, 0.7)),
+    url('img/флетУайт.jpeg') center/cover no-repeat;
 }
 
 .page-hero::before {
@@ -2230,175 +2161,6 @@ html {
   padding-bottom: 12px;
 }
 
-/* Partnership page styles */
-.partnership-page {
-  padding: 80px 10%;
-  max-width: 1200px;
-  margin: 0 auto;
-  position: relative;
-}
-
-.partnership-page::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: 
-    radial-gradient(circle at 25% 75%, rgba(139, 69, 19, 0.04) 0%, transparent 40%),
-    radial-gradient(circle at 75% 25%, rgba(160, 82, 45, 0.03) 0%, transparent 40%),
-    linear-gradient(135deg, rgba(139, 69, 19, 0.02) 0%, rgba(160, 82, 45, 0.02) 100%);
-  z-index: 0;
-  pointer-events: none;
-}
-
-.partnership-page > * {
-  position: relative;
-  z-index: 1;
-}
-
-.partnership-intro-detailed {
-  text-align: center;
-  margin-bottom: 80px;
-}
-
-.partnership-intro-detailed h2 {
-  font-size: 32px;
-  margin-bottom: 24px;
-}
-
-.partnership-intro-detailed p {
-  font-size: 18px;
-  color: #666;
-  line-height: 1.8;
-  max-width: 800px;
-  margin: 0 auto 40px;
-}
-
-.partnership-stats {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 32px;
-  margin-top: 40px;
-}
-
-.stat-card {
-  text-align: center;
-  padding: 24px;
-  background: #fff;
-  border-radius: 16px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-}
-
-.partnership-types {
-  display: grid;
-  gap: 80px;
-}
-
-.partnership-type {
-  background: #fff;
-  border-radius: 24px;
-  overflow: hidden;
-  box-shadow: 0 20px 60px rgba(0,0,0,0.08);
-}
-
-.type-header {
-  background: linear-gradient(135deg, #1d1d1d 0%, #333 100%);
-  color: #fff;
-  padding: 40px;
-  text-align: center;
-}
-
-.type-icon {
-  font-size: 64px;
-  margin-bottom: 20px;
-}
-
-.type-header h2 {
-  font-size: 28px;
-  margin: 0;
-}
-
-.type-content {
-  padding: 40px;
-}
-
-.type-content h3,
-.type-content h4 {
-  color: #1d1d1d;
-  margin: 24px 0 16px 0;
-}
-
-.type-content ul {
-  margin: 16px 0;
-  padding-left: 20px;
-}
-
-.type-content li {
-  margin: 8px 0;
-  color: #666;
-  line-height: 1.6;
-}
-
-.requirements,
-.franchise-benefits {
-  background: #f9f9f9;
-  padding: 24px;
-  border-radius: 12px;
-  margin-top: 32px;
-}
-
-.partnership-contact-detailed {
-  background: linear-gradient(135deg, #f8f6f0 0%, #f1ede4 100%);
-  padding: 60px;
-  border-radius: 24px;
-  text-align: center;
-  margin-top: 80px;
-}
-
-.partnership-contact-detailed h2 {
-  font-size: 32px;
-  margin-bottom: 24px;
-}
-
-.contact-methods {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 32px;
-  margin: 40px 0;
-}
-
-.contact-method {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  text-align: left;
-}
-
-.contact-icon {
-  font-size: 32px;
-  flex-shrink: 0;
-}
-
-.contact-info h4 {
-  font-size: 18px;
-  margin-bottom: 8px;
-  color: #1d1d1d;
-}
-
-.contact-info p {
-  margin: 4px 0;
-  color: #666;
-}
-
-.partnership-cta {
-  background: #fff;
-  padding: 24px;
-  border-radius: 12px;
-  margin-top: 40px;
-}
-
 /* News page styles */
 .news-page {
   padding: 80px 10%;
@@ -2990,37 +2752,6 @@ html {
     border-radius: 8px;
     background-position: right 12px center;
     background-size: 14px;
-  }
-  
-  .partnership-stats {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  
-  .type-header,
-  .type-content {
-    padding: 24px;
-  }
-  
-  .contact-methods {
-    grid-template-columns: 1fr;
-  }
-  
-  .contact-method {
-    flex-direction: column;
-    text-align: center;
-    gap: 12px;
-  }
-  
-  .news-card-detailed {
-    grid-template-columns: 1fr;
-  }
-  
-  .news-content {
-    padding: 24px;
-  }
-  
-  .locations {
-    grid-template-columns: 1fr;
   }
   
   .contact-grid {
